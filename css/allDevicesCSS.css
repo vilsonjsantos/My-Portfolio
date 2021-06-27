@@ -1,13 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 body{
-
     padding-top: 105px;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
 
 /* Elementos*/
 header{
@@ -29,7 +32,9 @@ br{
     clear: both;
 }
 
-h2{color:white}
+h2{
+    color:white
+}
 
 hr{
     height: 1px;
@@ -48,6 +53,13 @@ input{
     width: 50%;
     margin-bottom: 15px;
     margin-top: 5px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 #contato li{
     float:left;
@@ -112,8 +124,13 @@ input{
 
 #carousel{
     width: 100%;
-    height: 200px;
     background-color: gray;
+    display: flex;
+    overflow-x: auto;
+    -ms-scroll-snap-type: mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 
 }
 
@@ -167,7 +184,7 @@ input{
 }
 
 #footer-logo{
-    width: 100px;
+    width: 150px;
 
 }
 
@@ -204,7 +221,15 @@ input{
     padding: 10px 15px 10px 15px;
     background-color: white;
     box-sizing: border-box;
+}
 
+.item{
+    flex: none;
+    width: 100%;
+    margin-right: 20px;
+    -ms-scroll-snap-align:start;
+    scroll-snap-align: start;
+    pointer-events: none;
 }
 
 .portfolio-section{
