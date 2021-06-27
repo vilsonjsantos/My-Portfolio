@@ -110,6 +110,13 @@ input{
 
 }
 
+#carousel{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+
+}
+
 #portfolio{
     background-color:chocolate;
     padding: 15px;
@@ -188,6 +195,15 @@ input{
     padding: 15px;
     font-size: 1.5em;
     color: white;
+
+}
+
+.section-habilidades{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    box-sizing: border-box;
 
 }
 
