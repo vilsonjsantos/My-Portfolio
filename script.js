@@ -1,7 +1,7 @@
 let carousel = document.getElementById("carousel");
-let scrollTop = window.pageYOffset;
-let scrollLeft = window.pageXOffset;
-
+/* let scrollTop = window.pageYOffset;
+let scrollLeft = window.pageXOffset; */
+/* 
 carousel.addEventListener("mouseover", event => {
     disableScroll()
 })
@@ -9,20 +9,23 @@ carousel.addEventListener("mouseover", event => {
 carousel.addEventListener("mouseout", event => {
     enableScroll()
 }
-)
-
-carousel.addEventListener("wheel", event => {
-
-    if(event.deltaY > 0){
-        event.target.scrollBy(300, 0)
-    }
-    else{
-        event.target.scrollBy(-300, 0)
-    }
-
-})
+) */
 
 
+function clickCarouselLeft() {
+    console.log("left")
+    carousel.scrollBy(300, 0)
+    
+}
+
+function clickCarouselRight() {
+    console.log("right")
+    carousel.scrollBy(-300, 0)
+}
+
+
+
+/* 
 function disableScroll(){
     console.log("disable")
     scrollTop = window.pageYOffset;
@@ -38,4 +41,4 @@ function enableScroll(){
     scrollLeft = window.pageXOffset;
     window.onscroll = function(){}
     console.log("enable")
-}
+} */

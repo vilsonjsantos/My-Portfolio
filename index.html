@@ -32,8 +32,12 @@
         <div class="sectionClass" id="apresentacao">
             <div class="apresentacao-section">
                 <h1>Front End Developer</h1><br>
-                <p>Especializado no desenvolvimento de sites e contrução e aplicações web</p>  
-                <p>Certificado pelo curso do ProgramadorBR Igor Oliveira </p>                
+                    <div id="p-apresentacao">   
+                        <p>Landing pages, web applications & more;</p><br>
+                        <p>Certified by ProgramadorBR Front End Course - Igor Oliveira.</p>
+
+                    </div>
+                                
 
             </div>
         </div>
@@ -43,8 +47,8 @@
 
             <div class="section-habilidades" id="habilidades-container">
 
-                <div class="carousel-arrow" id="left-arrow"></div>
-                <div class="carousel-arrow" id="right-arrow"></div>
+                <div id="left-arrow" onclick="clickCarouselRight()"></div>
+                <div id="right-arrow" onclick="clickCarouselLeft()"></div>
 
                 <div class="section-habilidades" id="carousel">
                     <div class="item"><img src="/assets/barbecueimg.png" ></div>
@@ -167,8 +171,9 @@
                     <form>
                         <p>EMAIL</p>
                         <input type="email" name="email" >
-                        <p>EMAIL</p>
-                        <textarea rows="5" > Escreva aqui sua mensagem </textarea>
+                        <p>MESSAGE</p>
+                        <textarea rows="5" > </textarea>
+                        <input type="submit" name="enviar" value="Send">
                     </form>
 
                     <div class="contato-section">
@@ -197,7 +202,7 @@
         </div>  
         
         <div class="footer-div" id="footer-creditos">
-            <p>Desenvolvido por Vilson J. Santos</p>
+            <p>Handcrafted by por Vilson J. Santos</p>
         </div> 
 
     </footer>
