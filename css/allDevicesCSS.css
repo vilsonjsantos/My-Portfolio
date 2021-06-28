@@ -4,8 +4,19 @@
     box-sizing: border-box;
 
 }
+
+:root{
+    --var-color1: #7C1D62;
+    --var-color2: white;
+    --var-fontInWhite: black;
+    --var-fontInPurple: white; 
+
+}
+
 body{
-    padding-top: 105px;
+    padding-top: 75px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -16,16 +27,22 @@ body{
 /* Elementos*/
 header{
     width: 100%;
-    background-color:aqua;
+    background-color: var(--var-color1);
     position: fixed;
     top:0;
     z-index: 100;
     padding: 15px;
 }
 
+header a{
+    color: #FFE3FE;
+    text-decoration: none;
+    font-weight:bold;
+}
+
 footer{
     width: 100%;
-    background-color:aqua;
+    background-color:var(--var-color1);
     padding: 15px;
 }
 
@@ -33,18 +50,23 @@ br{
     clear: both;
 }
 
-h2{
-    color:white
+.portfolio-section h2{
+    color:var(--var-fontInPurple);
+}
+
+.contato-section h2{
+    color:var(--var-fontInWhite);
 }
 
 .apresentacao-section p{
     text-align: left;
+    font-size: 1.5em;
 
 }
 
 hr{
     height: 1px;
-    background-color: aqua;
+    background-color: var(--var-color1);
     border: none;
     width: 100%;
 }
@@ -93,20 +115,18 @@ img{
 
 /* IDs*/
 #main{
-
     width: 100%;
-    background-color: gray;
+    background-color: white    ;
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 
 #header-logo{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     padding: 15px;
-    background-color: white;
-    background-image: url("/assets/barbecueimg.png");
+    background-image: url("/assets/logo-png.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -114,20 +134,24 @@ img{
 }
 
 #nav-options{
-    padding: 15px;
     font-size: 0.8em;
+    margin-right: 15px;
     list-style: none;
 }
 
 #nav-options li{
     float: right;
     padding: 15px;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 #apresentacao{
-    background-color: salmon;
-    /* background-image: url("/assets/barbecueimg.png"); */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-image: url("/assets/outer-space-background.jpg"); 
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -141,13 +165,13 @@ img{
 }
 
 #habilidades{
-    background-color:brown;
+    background-color:white;
 
 }
 
 #carousel{
     width: 90%;
-    background-color: gray;
+    background-color: var(--var-color2);
     display: flex;
     overflow: hidden;
     overflow-x: hidden;
@@ -183,7 +207,7 @@ img{
 }
 
 #portfolio{
-    background-color:chocolate;
+    background-color:var(--var-color1);
     padding: 15px;
 
 }
@@ -193,7 +217,6 @@ img{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: aqua;
     height: 100px
 }
 
@@ -202,7 +225,6 @@ img{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: aqua;
     height: 100px
 }
 
@@ -211,22 +233,21 @@ img{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: aqua;
     height: 100px
 }
 
 
 #contato{
-    background-color:cadetblue;
     padding: 15px;
     box-sizing: border-box;
+    background-color: var(--var-color2);
 
 }
 
 #contato-form{
-    background-color: black;
+    background-color: var(--var-color2);
     text-align: left;
-    color:white;
+    color:var(--var-fontInWhite);
     box-sizing: border-box;
     width: 80%;
 }
@@ -250,16 +271,15 @@ img{
     flex-shrink: 1;
     padding: 15px;
     box-sizing: border-box;
-   /*  border: 10px solid black; */
+
 }
 
 .apresentacao-section{
     margin: 0 auto;
-    background-color: black;
-    width: 60%;
+    width: 70%;
     padding: 15px;
     font-size: 1.5em;
-    color: white;
+    color: var(--var-fontInPurple);
 
 }
 
@@ -268,7 +288,7 @@ img{
     width: 100%;
     margin: 0 auto;
     padding: 10px 30px 10px 30px;
-    background-color: white;
+    background-color: var(--var-color2);
     box-sizing: border-box;
 }
 
@@ -284,7 +304,7 @@ img{
     width: 100%;
     margin: 0 auto;
     padding: 10px 15px 10px 15px;
-    background-color: gray;
+    background-color: var(--var-color1);
     box-sizing: border-box;
 
 }
@@ -294,7 +314,7 @@ img{
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 10px 30px 10px 30px;
-    background-color:black;
+    background-color: var(--var-color1);
     box-sizing: border-box;
 
 }
@@ -302,7 +322,7 @@ img{
 .portfolio-section-projectimg{
     width: 40%;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--var-color2);
     box-sizing: border-box;
     float: left;
 
@@ -313,7 +333,8 @@ img{
     margin: 0 auto;
     margin-left: 15px;
     text-align: left;
-    background-color: white;
+    background-color: var(--var-color1);
+    color: var(--var-fontInPurple);
     box-sizing: border-box;
     float: right;
 
@@ -321,7 +342,7 @@ img{
 
 .contato-section{
    width: 100%;
-   background-color: gray;
+   background-color: var(--var-color2);
    padding: 10px 20px 10px 20px;  
    margin: 0 auto;
    box-sizing: border-box;
@@ -330,10 +351,9 @@ img{
 .footer-div{
     margin: 0 auto;
     width: 60%;
-    background-color: black;
     padding: 15px;
     margin-top: 15px;
-    color:white;
+    color:var(--var-fontInPurple);
     text-align: center;
 }
 
