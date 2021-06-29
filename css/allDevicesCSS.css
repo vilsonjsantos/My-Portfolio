@@ -8,7 +8,7 @@
 :root{
     --var-color1: #6930C3;
     --var-color2: white;
-    --var-fontInWhite: black;
+    --var-fontInWhite: #6930C3;
     --var-fontInPurple: white; 
 
 }
@@ -16,7 +16,8 @@
 body{
     padding-top: 75px;
     background-color: var(--var-color2);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight:;
 }
 
 ::-webkit-scrollbar {
@@ -166,6 +167,7 @@ img{
 
 #habilidades{
     background-color:var(--var-color2);
+    color: var(--var-fontInWhite);
 
 }
 
@@ -181,7 +183,7 @@ img{
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    border: 10px solid black;
+    /* border: 10px solid black; */
 
 }
 
@@ -192,8 +194,17 @@ img{
     width: 25px;
     top: 50%;
     left: 2%;
-    background-color: black;
+    background-image: url("../assets/leftarrow.png");
+    background-size: cover;
+    background-position: center;
     transform: translate(0%, -50%);
+}
+
+#left-arrow:active{
+    background-image: url("../assets/leftarrowActive.png");
+}
+#left-arrow:hover{
+    background-image: url("../assets/leftarrowHover.png");
 }
 
 #right-arrow {
@@ -203,8 +214,16 @@ img{
     width: 25px;
     top: 50%;
     right: 2%;
-    background-color: black;
+    background-image: url("../assets/rightarrow.png");
+    background-size: cover;
+    background-position: center;
     transform: translate(0%, -50%);
+}
+#right-arrow:active{
+    background-image: url("../assets/rightarrowActive.png");
+}
+#right-arrow:hover{
+    background-image: url("../assets/rightarrowHover.png");
 }
 
 #portfolio{
