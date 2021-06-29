@@ -185,7 +185,7 @@ img{
 }
 
 #nav-options{
-    font-size: 0.5em;
+    font-size: 0.8em;
     margin-right: 15px;
     list-style: none;
 }
@@ -281,12 +281,9 @@ img{
 
 }
 
-#project1img{
-    background-image: url("../assets/barbecueimg.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100px
+
+#project1img img{
+    width: 100%;
 }
 
 #project2img{
@@ -390,11 +387,14 @@ img{
 
 .portfolio-section-projectimg{
     width: 40%;
+    display: flex;
+    padding: 0;
     margin: 0 auto;
     background-color: var(--var-color2);
+    border-radius: 10px;
+    overflow: hidden;
     box-sizing: border-box;
     float: left;
-
 }
 
 .portfolio-section-projectdescription{
