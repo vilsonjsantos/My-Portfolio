@@ -76,6 +76,7 @@ textarea{
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border: 1px solid var(--var-fontInWhite);
 }
 
 form{
@@ -89,13 +90,21 @@ input{
     width: 50%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border: 1px solid var(--var-fontInWhite);
+    
 }
 
 input[type="submit"]{
-    width: 50%;
+    width: 30%;
     padding: 10px;
     margin-bottom: 15px;
     align-self: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--var-color1);
+    color: var(--var-fontInPurple);
+    border-radius: 15px;
+    border:none;
 }
 
 img{
@@ -112,6 +121,14 @@ img{
     margin: 0 auto;
 }
 
+#habilidades h2 a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--var-color1);
+    color: var(--var-fontInPurple);
+    border-radius: 15px;
+    margin-top: 20px;
+}
 
 
 /* IDs*/
@@ -170,18 +187,8 @@ img{
     color: var(--var-fontInWhite);
 }
 
-#habilidades h2 a{
-    text-decoration: none;
-    padding: 15px;
-    background-color: var(--var-color1);
-    color: var(--var-fontInPurple);
-    border-radius: 15px;
-    margin-top: 20px;
-
-}
-
 #carousel{
-    width: 90%;
+    width: 40%;
     background-color: var(--var-color2);
     display: flex;
     overflow: hidden;
@@ -199,8 +206,8 @@ img{
 #left-arrow {
     position: absolute;
     z-index: 99;
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     top: 50%;
     left: 2%;
     background-image: url("../assets/leftarrow.png");
@@ -219,8 +226,8 @@ img{
 #right-arrow {
     position: absolute;
     z-index: 99;
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     top: 50%;
     right: 2%;
     background-image: url("../assets/rightarrow.png");
