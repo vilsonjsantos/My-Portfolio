@@ -13,13 +13,11 @@ carousel.addEventListener("mouseout", event => {
 
 
 function clickCarouselLeft() {
-    console.log("left")
     carousel.scrollBy(300, 0)
     
 }
 
 function clickCarouselRight() {
-    console.log("right")
     carousel.scrollBy(-300, 0)
 }
 
