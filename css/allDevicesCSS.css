@@ -40,12 +40,15 @@ header a{
     color: var(--var-fontInPurple);
     text-decoration: none;
     font-weight:bold;
+    transition: all;
+    transition-duration: 1s;
 }
 
 header a:hover{
     color: var(--var-fontlinks);
     text-decoration: none;
     font-weight:bold;
+    font-size: 120%;
 }
 
 footer{
@@ -75,10 +78,13 @@ br{
 #portfolio a{
     color: var(--var-fontInPurple);
     text-decoration: none;
+    transition: all;
+    transition-duration: 1s;
 }
 #portfolio a:hover{
     color: var(--var-fontlinks);
     text-decoration: none;
+    font-size:120%
 }
 
 hr{
@@ -121,11 +127,14 @@ input[type="submit"]{
     color: var(--var-fontInPurple);
     border-radius: 15px;
     border:none;
+    transition: all;
+    transition-duration: 1s;
 }
 
 input[type="submit"]:hover{
     color: var(--var-fontlinks);
     cursor:pointer;
+    font-size:120%;
   
 }
 
@@ -156,11 +165,13 @@ img{
     color: var(--var-fontInPurple);
     border-radius: 15px;
     margin-top: 20px;
+    transition: all;
+    transition-duration: 1s;
 }
 
 #habilidades h2 a:hover{
     color: var(--var-fontlinks);
-
+    font-size:120%;
 }
 
 
@@ -247,6 +258,8 @@ img{
     background-size: cover;
     background-position: center;
     transform: translate(0%, -50%);
+    transition: all;
+    transition-duration: 1s;
 }
 
 #left-arrow:active{
@@ -267,6 +280,8 @@ img{
     background-size: cover;
     background-position: center;
     transform: translate(0%, -50%);
+    transition: all;
+    transition-duration: 1s;
 }
 #right-arrow:active{
     background-image: url("../assets/rightarrowActive.png");
@@ -286,20 +301,12 @@ img{
     width: 100%;
 }
 
-#project2img{
-    background-image: url("../assets/barbecueimg.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100px
+#project2img img{
+    width: 100%;
 }
 
-#project3img{
-    background-image: url("../assets/barbecueimg.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100px
+#project3img img{
+    width: 100%;
 }
 
 
